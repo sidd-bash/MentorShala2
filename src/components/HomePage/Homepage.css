@@ -30,21 +30,29 @@
     cursor: pointer;
 }
 .logo{
-    width: 6%;
-    height:6%;
+    width:80px;
 }
 .section2{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height:90vh;
     width:100%;
     background:url("https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000");
+    padding-left:0 10vw;
+}
+.section2 > h1{
+    width: 30vw;
+    font-size: 5vw;
+    /* color: #1434A4; */
+    margin: 0 10vw;
+    /* border:2px solid black; */
 }
 .section2 > img{
     
+    width: 2vw;
+    height: 5vw;
     /* border:2px solid black; */
-    border-radius: 50%;
 }
 .homepageimage{
     width: 30%;
@@ -52,6 +60,7 @@
     display: flex;
     justify-content: center ;
     object-fit: cover;
+    margin-left:10%;
 }
 .section3{
     width:auto;
@@ -90,6 +99,7 @@
 .sectionHeading{
     font-size: 2rem;
     color: #1434A4;
+    margin-bottom:4vh;
 }
 .aboutCard{
     margin:10%;
@@ -107,17 +117,22 @@
 }
 .section5{
     display: flex;
-    background: #1434A4;
+    background: paleturquoise;
     width:50%;
     justify-self: center;
     border-radius: 1vh;
-    padding:5%;
+    padding:2%;
+    margin:0;
+    flex-direction: column;
+    margin:5vh;
 }
 .contactDetails{
     display: flex;
     /* flex-direction: column; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    /* border:2px solid black; */
+    /* justify-content: space-between; */
 }
 .contactButtons > div{
     display: flex;
@@ -131,14 +146,65 @@
     align-items: center;
     padding: 10%;
     background: white;
-    border:2px solid black
+    /* border:2px solid black; */
+    width:30vw;
+
+}
+.contactForm > form > input{
+    width:100%;
+    border:none;
+    border-bottom: 2px solid black;
+    height: 5vh;
+    font-size: 2vh;
+    margin:2vh; 
+}
+.contactForm > form > textarea{
+    width:100%;
+    border:none;
+    border-bottom: 2px solid black;
+    height: 10vh;
+    font-size: 2vh;
+    margin: 2vh;
 }
 .contactButtons > button{
     border:none;
     background: transparent;
     margin:5%;
+    width:100%;
+
 }
 .contactButtons > button > img{
-    width: 50%;
-    height: 50%;
+    width: 10vh;
+    height: 10vh;
+}
+
+.section6{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:60vh;
+    width:100%;
+    background: darkslategray;  
+}
+@media only screen and (max-width: 900px) {
+    .section2{
+        flex-direction: column;
+    }
+    .contactDetails{
+        flex-direction: column;
+    }
+    .contactButtons{
+        flex-direction: row;
+    }
+    .contactButtons > button {
+        width:50vw;
+    }
+}
+.hompepageNavbar{
+    width:10vw;
+    border:40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1433a46a;
 }

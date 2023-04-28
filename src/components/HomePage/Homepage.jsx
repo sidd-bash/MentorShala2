@@ -4,7 +4,10 @@ import logo from "../../images/logo.png"
 import About from './About'
 import {BsFillArrowRightCircleFill} from 'react-icons/bs'
 import {BsFillArrowLeftCircleFill} from 'react-icons/bs'
-
+import {AiOutlineHome} from 'react-icons/ai'
+import {AiOutlineBook} from 'react-icons/ai'
+import {BsFillChatRightDotsFill} from 'react-icons/bs'
+import {BsFillPersonFill} from 'react-icons/bs'
 export default function Homepage() {
     const founders = [
         {
@@ -36,6 +39,12 @@ export default function Homepage() {
     let [founderNumber,setFounderNumber] = useState(0);
   return (
     <div className='homepage'>
+        <navbar className='homepageNavbar'>
+            <button><AiOutlineHome/></button>
+            <button><BsFillPersonFill/></button>
+            <button><BsFillChatRightDotsFill/></button>
+            <button><AiOutlineBook/></button>
+        </navbar>
         <div className='section1'>
         
                 <img className='logo' src={logo} alt="logo" />
@@ -99,12 +108,7 @@ export default function Homepage() {
                 Contact Us
             </div>
             <div className='contactDetails'>
-                <div className='contactButtons'>
-                    
-                    <button><img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?size=626&ext=jpg" alt="" /></button>
-                    <button><img src="https://img.freepik.com/free-icon/twitter_318-566762.jpg?size=626&ext=jpg" alt="" /></button>
-                    <button>LinkedIn</button>
-                </div>
+                
                 <div className='contactForm'>
                     <form onSubmit>
                         <input type="text" placeholder='Name' />
@@ -114,10 +118,61 @@ export default function Homepage() {
                         <button>Send</button>
                     </form>
                 </div>
+
+                <div className='contactButtons'>
+                    
+                    <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="" /></button>
+                    <button><img src="https://img.freepik.com/free-icon/twitter_318-566762.jpg?size=626&ext=jpg" alt="" /></button>
+                    <button><img src="https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png" alt="" /></button>
+                </div>
             </div>
             
         </div>
-        <div>Footer</div>
+        <div className='section6'>
+            <div className='list'>
+                <h3>Services</h3>
+                <ul>
+                    <li>Chat</li>
+                    <li>Card Swiping</li>
+                    <li>Community</li>
+                </ul>
+            </div>
+            <div className='list'>
+                <h3>Partners</h3>
+                <ul>
+                    <li>BYJU's</li>
+                    <li>GradeUP</li>
+                    <li>Unacademy</li>
+                    <li>Vedantu</li>
+                    <li>Toppr</li>
+                </ul>
+            </div>
+            <div className='list'>
+                <h3>Learning</h3>
+                <ul>
+                    <li>E-Portal</li>
+                    <li>Reports</li>
+                    <li>Policies</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+            <div className='list'>
+                <h3>Get in touch</h3>
+                <ul>
+                    <li>+91 XXXXXXXXX</li>
+                    <li>mentorSpace@gmail.com</li>
+                    <li>Ambala, Haryana, India</li>
+                </ul>
+            </div>
+            {/* <div className='list'>
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Chat</li>
+                    <li>Card Swiping</li>
+                    <li>Community</li>
+                </ul>
+            </div> */}
+        </div>
     </div>
   )
 }
