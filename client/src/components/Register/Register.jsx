@@ -31,7 +31,7 @@ export default function Register() {
       console.log(err);
     }
     
-    // navigate('/main')
+    navigate('/main')
     console.log('login')}
   return (
       <div className='login'>
