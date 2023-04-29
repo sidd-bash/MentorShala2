@@ -29,6 +29,10 @@
     color:white;
     cursor: pointer;
 }
+.buttons > button > Link{
+    text-decoration: none;
+    color:white;
+}
 .logo{
     width:80px;
 }
@@ -42,25 +46,26 @@
     padding-left:0 10vw;
 }
 .section2 > h1{
-    width: 30vw;
-    font-size: 5vw;
+    width: 80vw;
+    font-size: 3rem;
     /* color: #1434A4; */
-    margin: 0 10vw;
+    margin: 10vw 10vw;
     /* border:2px solid black; */
 }
-.section2 > img{
-    
-    width: 2vw;
-    height: 5vw;
+.homepageimage > img{
+    object-fit: contain;
+    width: 100%;
     /* border:2px solid black; */
 }
 .homepageimage{
-    width: 30%;
-    height: 50%;
+    width: 80%;
+    height: 40%;
     display: flex;
     justify-content: center ;
     object-fit: cover;
-    margin-left:10%;
+    /* margin:5%; */
+    padding:2vh;
+    /* border:2px solid black; */
 }
 .section3{
     width:auto;
@@ -114,11 +119,12 @@
     height:10%;
     margin:10%;
     border:none;
+    
 }
 .section5{
     display: flex;
     background: paleturquoise;
-    width:50%;
+    width:80%;
     justify-self: center;
     border-radius: 1vh;
     padding:2%;
@@ -129,32 +135,35 @@
 .contactDetails{
     display: flex;
     /* flex-direction: column; */
-    align-items: center;
-    justify-content: space-around;
+    /* align-items: center; */
+    /* justify-content: center; */
     /* border:2px solid black; */
     /* justify-content: space-between; */
 }
-.contactButtons > div{
+.contactButtons{
     display: flex;
     flex-direction: column;
-    margin:5%;
+    /* margin:5%; */
 }
 .contactForm{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 10%;
+    padding: 2%;
     background: white;
     /* border:2px solid black; */
-    width:30vw;
+    width:100%;
 
+}
+.contactForm > form{
+    padding:10%;
 }
 .contactForm > form > input{
     width:100%;
     border:none;
     border-bottom: 2px solid black;
-    height: 5vh;
+    height: 20%;
     font-size: 2vh;
     margin:2vh; 
 }
@@ -166,16 +175,27 @@
     font-size: 2vh;
     margin: 2vh;
 }
+.contactForm > form > button{
+    border:none;
+    background: peachpuff;
+    padding:2vh;
+    font-size:large;
+    cursor: pointer;
+    border-radius: 10px;
+    margin:10px;
+}
 .contactButtons > button{
     border:none;
     background: transparent;
     margin:5%;
-    width:100%;
+
+    /* width:30%; */
+    /* border:2px solid black; */
 
 }
 .contactButtons > button > img{
-    width: 10vh;
-    height: 10vh;
+    width: 15%;
+    /* height: 20%; */
 }
 
 .section6{
@@ -199,12 +219,28 @@
     .contactButtons > button {
         width:50vw;
     }
+    .contactForm{
+        width:100%;
+    }
 }
-.hompepageNavbar{
-    width:10vw;
-    border:40px;
+.homepageNavbar{
+    min-width: 20%;
+    min-height:2vh;
+    padding:2vh;
+    border-radius:40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #1433a46a;
+    background: #e6ebfc89;
+    border:1px solid rgba(0, 0, 0, 0.225);
+    position:fixed;
+    bottom:5vh;
+}
+.homepageNavbar > button{
+    width:fit-content;
+    padding:5%;
+    margin:5%;
+    border:none;
+    background: transparent;
+    cursor: pointer;
 }

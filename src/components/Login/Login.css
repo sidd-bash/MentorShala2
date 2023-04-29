@@ -1,0 +1,81 @@
+@media only screen and (max-width: 900px) {
+    .loginImage{
+        display: none;
+    }
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    overflow-y: hidden;
+    scrollbar-width: none;;
+    /* border:2px solid black; */
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
+}
+.loginForm{
+    
+    height:50vh;
+    width:50%;
+    /* border:2px solid black */
+
+}
+.loginForm > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    /* border:2px solid black; */
+}
+
+.loginForm > form > input{
+    width:20vw;
+    border:none;
+    border: 1px solid gray;
+    height: 10%;
+    font-size: 3vh;
+    margin:2vh;
+    padding:10%; 
+}
+.loginForm > form > button{
+    border:none;
+    background: peachpuff;
+    padding:2vh;
+    font-size:large;
+    cursor: pointer;
+    border-radius: 10px;
+    margin:10px;
+}
+
+.loginImage>img{
+    width:100%;
+    height:100%;
+}
+.loginImage{
+    width:50%;
+    height:50%;
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:none;
+    border:2px solid black;
+    border-radius: 50%;
+}
+.loginFrame{
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1.5rem;
+}

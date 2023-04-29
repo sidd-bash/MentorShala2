@@ -8,6 +8,7 @@ import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineBook} from 'react-icons/ai'
 import {BsFillChatRightDotsFill} from 'react-icons/bs'
 import {BsFillPersonFill} from 'react-icons/bs'
+import {Link} from 'react-router-dom'
 export default function Homepage() {
     const founders = [
         {
@@ -50,8 +51,8 @@ export default function Homepage() {
                 <img className='logo' src={logo} alt="logo" />
            
             <div className='buttons'>
-                <button>Admin</button>
-                <button>Login</button>
+                <button><Link style={{color:"white",textDecoration:"None"}} to='/admin'>Admin</Link></button>
+                <button><Link style={{color:"white",textDecoration:"None"}} to='/login'>Login</Link></button>
             </div>
             
         </div>
@@ -59,7 +60,7 @@ export default function Homepage() {
         <div className='section2'>
             <h1>Swipe on and study</h1>
             <div className='homepageimage'>
-            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80" alt='home page'/>
+                <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80" alt='home page'/>
             </div>
             
         </div>
