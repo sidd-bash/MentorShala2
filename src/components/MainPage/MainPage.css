@@ -1,0 +1,42 @@
+.mainPage{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid black; */
+    height: 100vh;
+}
+.chatSec{
+    width:30%;
+    height: 100%;
+    margin:none;
+    /* border:2px solid black; */
+    border:2px solid black;
+}
+.swipeSec{
+    min-width:70%; 
+    /* border:2px solid black; */
+
+}
+.mode{
+    display: flex;
+    height:10%;
+}
+.matchButton{
+    /* display: flex; */
+    width:50%;
+    /* flex-direction: column; */
+    
+    /* border:2px solid black; */
+    /* height: 100vh; */
+}
+.chatButton{
+    width:50%;
+
+}
+.chatButton > button{
+    width:50%;
+}
+.chats{
+    padding:1vh;
+    overflow: hidden;
+}

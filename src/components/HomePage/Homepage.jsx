@@ -38,14 +38,17 @@ export default function Homepage() {
         }
     ]
     let [founderNumber,setFounderNumber] = useState(0);
+    const handleEmail=()=>{
+        
+    }
   return (
     <div className='homepage'>
-        <navbar className='homepageNavbar'>
+        <div className='homepageNavbar'>
             <button><AiOutlineHome/></button>
             <button><BsFillPersonFill/></button>
             <button><BsFillChatRightDotsFill/></button>
             <button><AiOutlineBook/></button>
-        </navbar>
+        </div>
         <div className='section1'>
         
                 <img className='logo' src={logo} alt="logo" />
@@ -111,7 +114,7 @@ export default function Homepage() {
             <div className='contactDetails'>
                 
                 <div className='contactForm'>
-                    <form onSubmit>
+                    <form onSubmit={handleEmail}>
                         <input type="text" placeholder='Name' />
                         <input type="email" placeholder='Email' />
                         <input type="text" placeholder='Subject' />

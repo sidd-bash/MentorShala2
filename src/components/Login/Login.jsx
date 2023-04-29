@@ -7,6 +7,7 @@ export default function Login() {
   const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
+    console.log(e.target[0].value,e.target[1].value);
     navigate('/main')
     console.log('login')}
   return (
