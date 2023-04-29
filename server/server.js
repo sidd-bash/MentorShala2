@@ -1,6 +1,8 @@
 let express = require('express');
 let app = express();
 let mongoose = require('mongoose');
+const cors = require('cors');
+app.use(cors());
 app.use(express.json());
 app.listen(5000,()=>{
     console.log('Server started at port 5000');
