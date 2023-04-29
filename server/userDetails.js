@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const UserDetailsSchema = new mongoose.Schema({
     uname:String,
-    email:String,
+    email:{type: String, unique: true},
     password:String},
     {collection:'userDetails'});
 

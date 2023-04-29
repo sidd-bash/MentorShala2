@@ -42,7 +42,7 @@ export default function Register() {
           <div className='loginForm'>
             <form onSubmit={handleLogin}>
               <input type="text" placeholder='Username' />
-              <input type="text" placeholder='Email' />
+              <input type="email" placeholder='Email' />
               <input type="password" placeholder='Password' />
               <button>Register</button>
             </form>
